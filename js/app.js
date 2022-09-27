@@ -14,7 +14,6 @@ const getRandomPerson = async () => {
   const res = await axios.get(
     "https://randomuser.me/api/?inc=name,location,phone,email,picture"
   );
-  console.log(res.data.results[0]);
   return res.data.results[0];
 };
 
